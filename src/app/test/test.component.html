@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <header>
+    <h1>You can now upload multiple images at the same time.</h1>
+    <img src="assets/img/dividertriangle.png" class="divider" />
+  </header>
+  <body>
+    <div class="row">
+      <div class="col-lg-12">
+          <div class="text-center">
+              <div class="container" style="padding:0;padding-bottom:15px">
+                  <div class="crad">
+                      <span class="img-container">
+                          <img src="assets/img/cloudcomputing.png"
+                               style="width:140px;height:130px;text-align:center;" id="cloudimg" >
+                      </span>
+
+                      <div style="text-align:center;margin-bottom: 25px;">
+                          <label class="btn1 btnn uploadbtn">Browse
+                              <input type="file" id="fileUpload" accept="image/*" multiple style="display:none" (change)="fileChanged($event.target.files)" >
+                          </label>
+                          <button type="button" class="btn1 btnn btnUpload" (click)="onUploadClicked()" style="margin-left: 10px;">Upload</button>
+                      </div>
+                      <form [formGroup]="formImg">
+                      <div id="imazhet" style="margin-left:5px">
+                          <div id="preview" class="uploadedimg" style="display:inline;">
+                              <!-- <img src="img/aerial-view-of-seashore-near-large-grey-rocks-853199.jpg" style="width:100px;height:90px;margin-top: 17px;margin-right:5px;" class="uploadedimgblur" id="imagesupl"> -->
+                              <img *ngFor='let url of images'  [src]="url" height="100" width="100px" style="margin: 3px;">
+
+                              <!-- <div class="buttontoshow animated fadeInUp anim-delay"
+                                   style="cursor:pointer;"
+                                   id="divremove"
+                                   onmouseover="blurimg()"
+                                   onmouseout="unblurimg()">
+                                  <i class="la la-trash"></i>
+                              </div> -->
+                          </div>
+                      </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </body>
+</html>
+
+

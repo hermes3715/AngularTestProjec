@@ -1,0 +1,218 @@
+body{
+  overflow-x: hidden;
+}
+header {
+  position: relative;
+  height: 300px;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+}
+
+h1 {
+  margin: 0;
+  padding: 100px 0;
+  font: 44px "Arial";
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+}
+
+.fakebutton {
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+
+
+.uploadedimg {
+position: relative;
+width: 110px;
+max-width: 110px;
+height: 90px;
+max-height: 90px;
+padding: 4px;
+}
+
+.uploadedimg:hover .buttontoshow {
+  display: block;
+}
+
+.blurimg {
+
+filter: blur(2px) !important;
+}
+.btnUpload{
+  background-color: #ff6126 !important;
+  border: none;
+  color: white !important;
+  width: 70px !important;
+  height: 34px;
+}
+.btnUpload:hover{
+  color: white !important;
+  background-color: #ff6126 !important;
+  border: none !important;
+  width: 70px !important;
+}
+.buttontoshow {
+position: absolute;
+display: none;
+top: 23%;
+left: 30%;
+width: 40px;
+height: 40px;
+color: #F3536E;
+font-size: 22px;
+border: #F3536E 3px solid;
+text-align: center;
+border-radius: 60px;
+background-color: #F3536E;
+color: white;
+padding: 0 !important;
+}
+
+.crad {
+margin-top: 1% !important;
+
+background-color:transparent;
+border: #ff6126 2px dashed;
+width: 100%;
+height: 100%;
+padding: 8px;
+font-size: 18px;
+}
+
+.btnn {
+color: #ff6126;
+background-color: white;
+border-color: #ff6126;
+}
+
+.btn1 {
+display: inline-block;
+margin-bottom: 0;
+font-weight: 400;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-color: #ff6126;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857143;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+.btnn:hover {
+color: white;
+background-color: #ff6126;
+border-color: white;
+}
+
+.image {
+opacity: 1;
+display: block;
+width: 100%;
+height: auto;
+transition: .5s ease;
+backface-visibility: hidden;
+}
+
+.img-container {
+text-align: center;
+display: block;
+}
+
+.uploadedimgblur:hover {
+
+filter: blur(2px);
+}
+
+.displaybutton {
+position: absolute;
+top: 40%;
+left: 40%;
+height: 25px;
+width: 25px;
+border-radius: 50%;
+background-color: red;
+font-size: 13px;
+border: none;
+cursor: pointer;
+text-align: center;
+display: block;
+}
+
+.imgss {
+background-color: transparent;
+border: #ff6126 1px solid;
+width: 150px;
+height: 150px;
+padding: 8px;
+font-size: 18px;
+border-radius: 50%;
+}
+
+.imagesss {
+width: 145px;
+height: 145px;
+margin-top: 1px;
+margin-bottom: 7px;
+}
+
+.images2 {
+width: 145px;
+height: 135px;
+margin-left: 2px;
+}
+
+.containerss2 {
+background-color: white;
+border: #ff6126 1px solid;
+width: 170px;
+height: 180px;
+padding: 8px;
+font-size: 18px;
+border-radius: 15px;
+}
+
+@media screen and (max-width:1200px) {
+.containerss2 {
+  margin-top: 3px;
+  margin-left: 5px !important;
+}
+}
+
+@media screen and (min-width:300px) and (max-width:440px) {
+.qenderimazhet {
+  text-align: center;
+}
+}
+
+@media screen and (min-width:440px) and (max-width:540px) {
+.qenderimazhet {
+  text-align: center;
+}
+}
+
+@media screen and (min-width:540px) and (max-width:640px) {
+.qenderimazhet {
+  text-align: center;
+}
+}
